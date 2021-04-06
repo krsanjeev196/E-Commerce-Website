@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up page</title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style_register.css">
+
+</head>
+<body>
+
+		<div class="menu_bar">
+		<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+		</div>
+
+	<div class="html_form">
+		<h2>Sign Up</h2>
+
+		<form onsubmit="return validation()">
+			<label>First Name</label><br>
+			<input type="text" id="firstname" name="" ><br>
+			<span id="errorfirstname" style="color: red; font-size: 10px;"></span>
+
+
+			<label>Last Name</label><br>
+			<input type="text" id="lastname" name=""><br>
+			<span id="errorlastname" style="color: red; font-size: 10px;"></span>
+
+
+			<label >Gender</label><br>
+			<input type="radio" name="Gender" value="Male" required>Male<br>
+			<input type="radio" name="Gender" value="Female" required>Female<br>
+			<input type="radio" name="Gender" value="Other" required>Other<br>
+
+			<label>Mobile Number</label><br>
+			<input type="number" id="number" name=""><br>
+			<span id="errornumber" style="color: red; font-size: 10px;"></span>
+
+			<label>Email Id</label><br>
+			<input type="email" id="email" name=""><br>
+			<span id="erroremail" style="color: red; font-size: 10px;"></span>
+
+<!--Address Starts-->
+			<label>Address</label><br>
+			<input type="" id="line1" name="" placeholder="Line 1"><br>
+			<span id="errorline1" style="color: red; font-size: 10px;"></span>
+
+			<input type="" id="line2" name="" placeholder="Line 2"><br>
+			<span id="errorline2" style="color: red; font-size: 10px;"></span>
+
+			<input type="number" id="pin" name="" placeholder="Pin code"><br>
+			<span id="errorpin" style="color: red; font-size: 10px;"></span>
+
+			<input type="text" id="city" name="" placeholder="City"><br>
+			<span id="errorcity" style="color: red; font-size: 10px;"></span>
+
+			<input type="text" id="state" name="" placeholder="State"><br>
+			<span id="errorstate" style="color: red; font-size: 10px;"></span>
+<!--Address Ends-->
+
+<!--Password starts-->
+			<label>Password</label><br>
+			<input type="password" id="password" name=""><br>
+			<span id="errorpassword" style="color: red; font-size: 10px;"></span>
+			
+			<label>Confirm Password</label><br>
+			<input type="text" id="cpassword" name=""><br>
+			<span id="errorcpassword" style="color: red; font-size: 10px;"></span>
+<!--Password Ends-->
+
+			<input type="checkbox" name="" required value="I agree to the T&Cs">I agree to the T&Cs<br>
+
+			<button type="submit">Submit</button><br>
+			<button type="reset">Refresh</button><br>
+
+
+		</form>
+	</div>
+
+<script type="text/javascript" src="main.js">	</script>
+
+</body>
+</html>
