@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up page</title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style_register.css">
+
+</head>
+<body background="image\pic15.jpeg" style="background-size: cover;">
+
+		<div class="menu_bar">
+		<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+		</div>
+
+	<div class="html_form">
+		<h2>Sign Up</h2>
+
+		<form onsubmit="return validation()" name="submit-googlesheet" method="POST">
+			<label>First Name</label><br>
+			<input type="text" id="firstname" name="First Name" ><br>
+			<span id="errorfirstname" style="color: red; font-size: 10px;"></span>
+
+
+			<label>Last Name</label><br>
+			<input type="text" id="lastname" name="Last Name"><br>
+			<span id="errorlastname" style="color: red; font-size: 10px;"></span>
+
+
+			<label >Gender</label><br>
+			<input type="radio" name="Gender" value="Male" required>Male<br>
+			<input type="radio" name="Gender" value="Female" required>Female<br>
+			<input type="radio" name="Gender" value="Other" required>Other<br>
+
+			<label>Mobile Number</label><br>
+			<input type="number" id="number" name="Mobile Number"><br>
+			<span id="errornumber" style="color: red; font-size: 10px;"></span>
+
+			<label>Email Id</label><br>
+			<input type="email" id="email" name="Email"><br>
+			<span id="erroremail" style="color: red; font-size: 10px;"></span>
+
+<!--Address Starts-->
+			<label>Address</label><br>
+			<input type="" id="line1" name="Line 1" placeholder="Line 1"><br>
+			<span id="errorline1" style="color: red; font-size: 10px;"></span>
+
+			<input type="" id="line2" name="Line 2" placeholder="Line 2"><br>
+			<span id="errorline2" style="color: red; font-size: 10px;"></span>
+
+			<input type="text" id="city" name="City" placeholder="City"><br>
+			<span id="errorcity" style="color: red; font-size: 10px;"></span>
+
+			<input type="text" id="state" name="State" placeholder="State"><br>
+			<span id="errorstate" style="color: red; font-size: 10px;"></span>
+
+			<input type="number" id="pin" name="Pin Code" placeholder="Pin code"><br>
+			<span id="errorpin" style="color: red; font-size: 10px;"></span>
+<!--Address Ends-->
+
+<!--Password starts-->
+			<label>Password</label><br>
+			<input type="password" id="password" name="New Password"><br>
+			<span id="errorpassword" style="color: red; font-size: 10px;"></span>
+			
+			<label>Confirm Password</label><br>
+			<input type="text" id="cpassword" name="Confirm Password"><br>
+			<span id="errorcpassword" style="color: red; font-size: 10px;"></span>
+<!--Password Ends-->
+
+			<input type="checkbox" name="" required value="I agree to the T&Cs">I agree to the T&Cs<br>
+
+			<button type="submit">Submit</button><br>
+			<button type="reset">Refresh</button><br><br>
+
+			Existing user? <a href="sign_in.html" style="text-decoration: none;"> Sign In</a>
+
+
+		</form>
+	</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="main.js">	</script>
+
+<script type="text/javascript">
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyBUVdQI2OGxEsF2EHeXdGsv6kTYX38MGUy_0JOAGPB09h8QSMvD2kdwp7sXftCGUCH/exec'
+            const form = document.forms['submit-googlesheet']
+         
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have been registered successfully."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+
+
+</body>
+</html>

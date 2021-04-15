@@ -109,4 +109,19 @@ else{
 	return false;
 }
 
+/* For storing data in google sheet. */
+
+/*
+            const scriptURL = 'https://script.google.com/macros/s/AKfycby97qWbFm_z3K7q9Ti6YIsv9k-JIBFQzpC0DNxMAp-diZ6OoTqVl7-cXnq-aanVcoJMaQ/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have been registered successfully."))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+*/
+
 }

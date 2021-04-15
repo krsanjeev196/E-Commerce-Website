@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout page</title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style_register.css">
+
+	<style type="text/css">
+		
+	*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	}
+	.login{
+		color: white;
+	}
+	</style>
+</head>
+<body background="image/pic12.jpeg" style="background-size: cover;">
+
+
+       <div class="menu_bar">
+		 <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>	
+		</div>
+
+
+<div class="html_form">
+	<h2>Sign In</h2>
+
+<form onsubmit="return validation()">
+
+<label>Email/ Mobile Number</label><br>
+<input type="text number" name="" required><br>
+
+<label>Password</label><br>
+<input type="password" name="" required><br>
+
+
+<button type="submit" ><a href="checkout_address.html" class="login"> Next </a> </button><br>
+<button type="refresh">Refresh</button><br>
+<!-- <button><a href="">Back </a> </button> -->
+
+</form>
+</div>
+
+
+<!--
+
+<script type="text/javascript">
+	function validation(){
+		var number = document.getElementById('number').value;
+		var email = document.getElementById('email').value;
+
+		var numbercheck = /^[6789][0-9]{9}$/;
+		var emailcheck = /^[a-z0-9._]{3,}@[a-z]{3,}[.]{1}[a-z.]{2,6}$/;
+
+		if (numbercheck.test(number)) {
+		document.getElementById('errornumber').innerHTML = " ";
+		}
+		else{
+			document.getElementById('errornumber').innerHTML = "**Invalid number";
+			return false;
+		}
+		if (emailcheck.test(email)) {
+			document.getElementById('erroremail').innerHTML = " ";
+		}
+		else{
+			document.getElementById('erroremail').innerHTML = "**Invalid email syntax ";
+			return false;
+		}
+	}
+</script>
+
+-->
+
+</body>
+</html>

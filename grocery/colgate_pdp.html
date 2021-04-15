@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colgate description page</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Bootstrap icons-->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<style type="text/css">
+		*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.nav{
+	position: relative;
+	background-color:black;   /*#283747*/
+	box-sizing: border-box;
+}
+.nav_1{
+	position: fixed;/*to fix the navigation bar even after scrolling*/
+	top: 0;
+	right: 0;
+	left: 0;
+}
+.logo_img{
+	float: left;
+	color: black;
+	margin: 20px;
+}
+.logo_img .logo{
+	color: WHITE;
+	font-family: Vardana;
+	font-size: 20px;
+}
+.menu_bar{
+	width: 50%;
+	float: right;
+	margin: 20px;
+}
+.menu_bar a{
+	float: right;
+	text-decoration: none;
+	font-family: vardana;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 20px;
+	color: white;
+}
+.mobile_menu_bar{
+	float: right;
+	padding: 20px; 	
+	display: none;
+	color: white;
+}
+.mobile_menu_bar .fa{
+	font-size: 25px;
+}
+.menu_bar_01{
+	width: 80%;
+	margin: 20px;
+	display: grid;
+	height: auto;
+	display: none;
+	z-index: 999;
+}
+.menu_bar_01 a{
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-family: vardana;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 20px;
+	padding: 10px;
+}
+.close{
+	text-align: right;
+}
+/*
+.section_1{
+	margin-top: 65px;
+}
+*/
+section .colgate{
+	padding: 80px;
+	margin-top: 90px;
+	width: 400px;
+	height: 400px;
+}
+.card{
+	background-color: white;
+}
+.grocery{
+	display: flex;
+}
+.card{
+	display: flex;
+	width: 25%;
+	height: 200px;
+	border: 1px solid black;
+	margin: 20px;
+	/* box-shadow: 0px 2px 40px #283747; */
+	overflow: hidden;
+}
+section .colgate_description{
+	margin-top: 65px;
+	padding: 65px;
+	margin-top: 80px;
+	margin-right: 40%;
+}
+button{
+	width: 90%;
+	margin:5px;
+	padding:5px;
+	border-radius: 5px ;
+	border:none;
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+button:hover{
+	background-color: green;
+}
+@media (max-width: 320px){
+	.nav .menu_bar{
+		display: none;
+	}
+	.mobile_menu_bar{
+		display: block;
+	}
+}
+
+@media (max-width: 480px){
+	.nav .menu_bar{
+		display: none;
+	}
+	.mobile_menu_bar{
+		display: block;
+	}
+}
+@media (max-width: 760px ){
+
+}
+@media (max-width:900px ){
+	
+}
+@media (max-width:1024px ){
+	
+}
+</style>
+</head>
+<body background="../image/pic23.jpeg" style="background-size: cover;">
+
+<nav class="nav nav_1" >
+	<div class="logo_img">
+		<a href="../index.html" class="logo">APPLINE:buy online</a>
+		<!--Add logo-->
+	</div>
+	<div class="menu_bar" >
+		<a href="mailto:krsanjeev196@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> </i> Mail</a>
+		<a href="tel:9660766870"><i class="fa fa-phone" aria-hidden="true"> </i> Contact</a>
+		<a href=""><i class="fa fa-shopping-cart" aria-hidden="true"> </i> Cart</a>
+
+		<a href="../sign_in.html"><i class="fa fa-sign-in" aia-hidden="true"> </i> Login/ Register</a>            
+		<a href="">About Us</a>
+		<a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	</div>
+	<div class="mobile_menu_bar">
+		<a  onclick="document.getElementById('menu_bar_01').style.display= 'grid';"><i class="fa fa-bars" aria-hidden="true"></i></a> 
+	</div>
+	<div class="menu_bar_01" id="menu_bar_01">
+
+		<a class="close" onclick="document.getElementById('menu_bar_01').style.display= 'none';"> <i class="fa fa-times" aria-hidden="true"></i> </a>
+
+		<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+		<a href="">About Us</a>
+		<a href="sign_in.html"><i class="fa fa-sign-in" aia-hidden="true"> </i> Login/ Register</a>
+		<a href=""><i class="fa fa-shopping-cart" aria-hidden="true"> </i> Cart</a>
+		<a href="tel:9660766870"><i class="fa fa-phone" aria-hidden="true"> </i> Contact</a>
+		<a href="mailto:krsanjeev196@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> </i> Mail</a>	
+	</div>
+</nav>
+
+<section class="section_1">
+	<div class="container grocery">
+			<div >
+				<img src="../image/pic33.jpeg" class="colgate">
+			</div>
+			<div class="colgate_description">
+				<pre >
+					<b>Colgate Charcoal Clean Toothpaste, Black Gel Paste, .
+						Bamboo Charcoal and Wintergreen Mint for
+						 Clean Mouth, 480g, 120g X 4</b>	
+					<a href="https://www.colgate.com/en-us">visit the Colgate store</a>
+					 
+					M.R.P.:	₹ 396.00
+					Deal Price:	₹ 340.00 (₹ 70.83 / 100 g)
+					You Save:	₹ 56.00 (14%)
+							Inclusive of all taxes
+					Free Delivery
+
+					Size: Multi Pack (120gm x 4 Pcs)
+					</pre>
+					<h3>Product Description</h3>
+					<ul>
+						<li>Revive your senses with the new Colgate Charcoal Clean, that has the goodness of bamboo charcoal and wintergreen mint for a clean mouth experience.</li>
+
+						<li>This gel based toothpaste is extracted with expertise. Bamboo Charcoal is known for cleaning properties and Wintergreen Mint is known to freshen breath.</li>
+
+						<li>It is a black, gel based paste. This pack has 4 x 120g tubes</li>
+
+						<li>Recommended usage: Brush twice a day for 2 minutes each time. Children below 6 years of age should have adult supervision</li>
+
+						<li>Good oral care habits keep your teeth and gums healthy, prevents tooth decay, gum disease & bad breath. To maintain good oral hygiene brush twice a day for 2 minutes each time, rinse with mouthwash for 30 seconds, and replace your toothbrush every 3 months</li>
+
+						<li>Colgate is India's most trusted oral care brand and certified by Indian Dental Association. This toothpaste is 100% Vegan, Sugar-free and Gluten free</li>
+					</ul><br>
+
+
+					<button > <a href="../checkout.html" style="color: white;">Buy Now </a> </button>
+					<button >Add To Cart</button>
+			</div>
+	</div>
+	<div>
+		
+	</div>
+</section>
+</body>
+</html>

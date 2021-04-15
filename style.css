@@ -37,6 +37,43 @@
 	font-weight: bold;
 	font-size: 15px;
 	margin-right: 20px;
+	color: white;
+}
+
+.mobile_menu_bar{
+	float: right;
+	padding: 20px; 	
+	display: none;
+}
+.mobile_menu_bar .fa{
+	font-size: 25px;
+}
+.menu_bar_01{
+	width: 80%;
+	margin: 20px;
+	display: grid;
+	height: auto;
+	display: none;
+	z-index: 999;
+}
+.menu_bar_01 a{
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-family: vardana;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.close{
+	text-align: right;
+}
+
+
+.slider{
+	margin-top: 100px;
 }
 .section_1{
 	margin-top: 65px;
@@ -68,5 +105,92 @@
 .kids{
 	display: flex;
 }
+.product_cateogories{
+	align-content: right;
+	margin-right: 60px;
+	margin-top: 15%;
+}
+.product_cateogories a{
+	color: black;
+}
+.product_cateogories a:hover{
+	color: blue;
+}
+.cateogories{
+margin-left: 60%;
+color: black;
+}
+.fa-mobile{
+	color: black;
+}
+.fa-laptop{
+	color: black;
+}
+.fa-child{
+	color: black;
+}
+.fa-cutlery{
+	color: black;
+}
+.map{
+	padding: 20px;
+}
+.social_media{
+	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
+	display: flex;
+}
+.whatsapp{
+	padding: 10px;
+}
+.instagram{
+	padding: 10px;
+}
+.other{
+	float: right;
+	margin-right: 50px;
+	margin-top: 50px;
+	display: flex;
+}
+.terms{
+	padding: 10px;
+	color: white;
+}
+.questions{
+	padding:10px; 
+	color: white;
+}
+.copyright{
+	color: white;
+	margin-left: 50%;
+	display: center;
+}
 
 
+@media (max-width: 320px){
+	.nav .menu_bar{
+		display: none;
+	}
+	.mobile_menu_bar{
+		display: block;
+	}
+}
+
+@media (max-width: 480px){
+	.nav .menu_bar{
+		display: none;
+	}
+	.mobile_menu_bar{
+		display: block;
+	}
+}
+@media (max-width: 760px ){
+
+}
+@media (max-width:900px ){
+	
+}
+@media (max-width:1024px ){
+	
+}
